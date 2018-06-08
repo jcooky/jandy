@@ -1,0 +1,2 @@
+export const FETCH_PROFILE = "FETCH_PROFILE";
+export const FETCH_ACCESS_TOKEN = "FETCH_ACCESS_TOKEN";

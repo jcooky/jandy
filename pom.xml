@@ -2,46 +2,47 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.jandy</groupId>
-  <artifactId>jandy</artifactId>
-  <version>0.4.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
+    <groupId>io.jandy</groupId>
+    <artifactId>jandy</artifactId>
+    <version>0.4.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-  <modules>
-    <module>jandy-server</module>
-    <module>jandy-java-profiler</module>
-    <module>jandy-python</module>
-  </modules>
+    <modules>
+        <module>jandy-server</module>
+        <module>jandy-java-profiler</module>
+        <module>jandy-python</module>
+        <module>jandy-ui</module>
+    </modules>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-  <profiles>
-    <profile>
-      <id>unix</id>
-      <activation>
-        <os>
-          <family>unix</family>
-        </os>
-      </activation>
-      <properties>
-        <python.executable.name>python2.7</python.executable.name>
-      </properties>
-    </profile>
-    <profile>
-      <id>windows</id>
-      <activation>
-        <os>
-          <family>windows</family>
-        </os>
-      </activation>
-      <properties>
-        <python.executable.name>python</python.executable.name>
-      </properties>
-    </profile>
-  </profiles>
+    <profiles>
+        <profile>
+            <id>unix</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+            </activation>
+            <properties>
+                <python.executable.name>python2.7</python.executable.name>
+            </properties>
+        </profile>
+        <profile>
+            <id>windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
+            <properties>
+                <python.executable.name>python</python.executable.name>
+            </properties>
+        </profile>
+    </profiles>
 
 </project>

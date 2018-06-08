@@ -1,0 +1,44 @@
+{
+  "name": "{{project.name}}",
+  "version": "{{project.version}}",
+  "description": "",
+  "scripts": {
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p --config webpack.prod.config.js",
+    "dev": "node_modules/.bin/webpack --watch --config webpack.dev.config.js",
+    "start": "node_modules/.bin/webpack-dev-server --colors --content-base public --inline --hot --config webpack.dev.config.js --mode development"
+  },
+  "author": "JCooky",
+  "license": "GPLv3",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "prop-types": "^15.6.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "url-search-params": "^0.10.0",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}

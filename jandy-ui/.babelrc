@@ -1,0 +1,4 @@
+{
+  "presets": ["stage-3", "env", "react"],
+  "plugins": ["transform-function-bind"]
+}
